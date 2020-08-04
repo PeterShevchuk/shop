@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: Poppins;
+  font-size: 14px;
+  color: #000000;
+  background-color: #ffffff;
+}
+.container {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.contact {
+  border-bottom: 1px solid #cccccc;
+  padding: 25px 0;
+}
+.contact__tel {
+  margin-right: 20px;
+}
+
+.contact__tel,
+.contact__mail {
+  display: inline;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.header-menu,
+.header-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.header-menu__list:not(:last-child) {
+  margin-right: 40px;
+}
+.header-menu {
+  margin: 40px 0;
+}
+.header-menu__item {
+  text-decoration: none;
+  color: #000000;
+}
+.header-btn__list {
+  cursor: pointer;
+}
+
+.icons {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+}
+.icon--tel {
+  background-image: url("../img/icons/tel.png");
+}
+.icon--email {
+  background-image: url("../img/icons/email.png");
+}
+.icon--user {
+  background-image: url("../img/icons/user.png");
+}
+.icon--search {
+  background-image: url("../img/icons/search.png");
+}
+.icon--basker {
+  background-image: url("../img/icons/basket.png");
+}
+.slider {
+  position: relative;
+}
+.slider img {
+  max-width: 100%;
+  max-height: 870px;
+}
+.slider__text {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: linear-gradient(
+    110deg,
+    rgba(188, 117, 81, 0.4) 0 15%,
+    transparent 15% 85%,
+    rgba(183, 169, 163, 0.4) 85%
+  );
+  font-size: 62px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 255px;
+}
+.slider__text-first {
+  font-size: 200px;
+  line-height: 200px;
+}
