@@ -33,7 +33,8 @@ body {
 
 .contact__tel,
 .contact__mail {
-  display: inline;
+  display: inline-flex;
+  text-decoration: unset;
 }
 .logo {
   text-transform: uppercase;
@@ -78,22 +79,41 @@ body {
   height: 22px;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-right: 10px;
+  transition: all 0.1s linear;
+  margin-right: 15px;
+}
+.nav-btn__list:last-child .icons {
+  margin-right: 0;
 }
 .icon--tel {
   background-image: url("../img/icons/tel.png");
 }
+.contact__tel:hover > .icon--tel {
+  background-image: url("../img/icons/tel-hover.png");
+}
 .icon--email {
-  background-image: url("../img/icons/email.png");
+  background-image: url("../img/icons/mail.png");
+}
+.contact__mail:hover > .icon--email {
+  background-image: url("../img/icons/mail-hover.png");
 }
 .icon--user {
   background-image: url("../img/icons/user.png");
 }
+.icon--user:hover {
+  background-image: url("../img/icons/user-hover.png");
+}
 .icon--search {
   background-image: url("../img/icons/search.png");
 }
+.icon--search:hover {
+  background-image: url("../img/icons/search-hover.png");
+}
 .icon--basker {
   background-image: url("../img/icons/basket.png");
+}
+.icon--basker:hover {
+  background-image: url("../img/icons/basket-hover.png");
 }
 .slider {
   position: relative;
@@ -150,8 +170,8 @@ body {
   margin-bottom: 24px;
 }
 .product__rate {
-  width: 80px;
-  height: 16px;
+  width: 120px;
+  height: 24px;
   background-image: url("../img/icons/star.png");
   margin: 0 auto 24px;
 }
@@ -380,6 +400,9 @@ body {
   text-decoration: unset;
   margin: 5px 0;
   color: #888888;
+}
+.footer__link:hover {
+  text-decoration: underline;
 }
 .footer__copyright {
   color: #888888;
