@@ -241,6 +241,18 @@ body {
   font-weight: 700;
   margin-bottom: 50px;
 }
+.saleTop__price p {
+}
+.product__price-new {
+  display: inline-block;
+}
+.product__price-old {
+  display: inline-block;
+  font-size: 12px;
+  text-decoration: line-through;
+  color: red;
+  vertical-align: super;
+}
 .saleTop__timer {
   margin-bottom: 50px;
 }
@@ -253,8 +265,9 @@ body {
 .saleTop__timer-sec {
   display: inline-block;
   text-align: center;
-  padding: 20px 35px;
+  padding: 25px 35px;
   border: 1px solid #ffffff;
+  min-width: 140px;
 }
 .saleTop__timer-number {
   line-height: 52px;
