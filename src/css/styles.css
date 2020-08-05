@@ -22,20 +22,11 @@ body {
   background-color: #ffffff;
 }
 .container {
-  /* max-width: 1440px; */
   max-width: 320px;
 
   min-width: 320px;
   margin: 0 auto;
 }
-.tablet,
-.laptop {
-  display: none;
-}
-.mobile {
-  display: inline-block;
-}
-
 .contact {
   border-bottom: 1px solid #cccccc;
   padding: 15px 0;
@@ -50,24 +41,18 @@ body {
   text-decoration: unset;
 }
 .logo {
+  display: inline-block;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
 }
-
 .nav {
+  display: flex;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
   padding-top: 40px;
   margin-bottom: 40px;
-}
-
-/* .nav-menu__list:not(:last-child) {
-  margin-right: 40px;
-} */
-.nav-menu {
-  display: none;
 }
 .nav-menu__item {
   text-decoration: none;
@@ -76,13 +61,6 @@ body {
 .nav-menu__item:hover {
   color: #eaac00;
 }
-.nav-btn {
-  display: none;
-}
-.nav-btn__list {
-  cursor: pointer;
-}
-
 .icons {
   display: inline-block;
   width: 22px;
@@ -90,10 +68,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   transition: all 0.1s linear;
-  margin-right: 15px;
-}
-.nav-btn__list:last-child .icons {
-  margin-right: 0;
 }
 .icon--tel {
   background-image: url("../img/icons/tel.png");
@@ -166,9 +140,6 @@ body {
 .product {
   text-align: center;
 }
-/* .product__list:not(:nth-child(4n)) {
-  margin-right: 20px;
-} */
 .product__list:not(:first-child) {
   margin-top: 20px;
 }
@@ -250,7 +221,6 @@ body {
   font-weight: 700;
   margin-bottom: 50px;
 }
-
 .product__price-new {
   display: inline-block;
 }
@@ -420,4 +390,11 @@ body {
 }
 .footer__copyright {
   color: #888888;
+}
+.tablet,
+.laptop {
+  display: none;
+}
+.mobile {
+  display: inline-block;
 }
