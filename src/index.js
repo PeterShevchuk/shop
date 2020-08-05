@@ -1,4 +1,5 @@
 import "./css/styles.css";
+import "./css/media.css";
 
 import Timer from "./js/timer.js";
 

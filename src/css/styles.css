@@ -12,6 +12,9 @@ a {
 img {
   display: block;
 }
+button {
+  outline: 0;
+}
 body {
   font-family: Poppins;
   font-size: 14px;
@@ -19,8 +22,18 @@ body {
   background-color: #ffffff;
 }
 .container {
-  max-width: 1440px;
+  /* max-width: 1440px; */
+  max-width: 320px;
+
+  min-width: 320px;
   margin: 0 auto;
+}
+.tablet,
+.laptop {
+  display: none;
+}
+.mobile {
+  display: inline-block;
 }
 
 .contact {
@@ -43,24 +56,18 @@ body {
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
+  padding-top: 40px;
+  margin-bottom: 40px;
 }
 
-.nav-menu,
-.nav-btn {
-  display: flex;
-  justify-content: space-between;
-}
-.nav-menu__list:not(:last-child) {
+/* .nav-menu__list:not(:last-child) {
   margin-right: 40px;
-}
+} */
 .nav-menu {
-  margin: 40px 0;
+  display: none;
 }
 .nav-menu__item {
   text-decoration: none;
@@ -68,6 +75,9 @@ body {
 }
 .nav-menu__item:hover {
   color: #eaac00;
+}
+.nav-btn {
+  display: none;
 }
 .nav-btn__list {
   cursor: pointer;
@@ -117,7 +127,7 @@ body {
 }
 .slider {
   position: relative;
-  margin-bottom: 90px;
+  margin-bottom: 40px;
 }
 .slider img {
   max-width: 100%;
@@ -135,19 +145,18 @@ body {
     transparent 15% 85%,
     rgba(183, 169, 163, 0.4) 85%
   );
-  font-size: 62px;
+  font-size: 16px;
   font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 255px;
+  padding-left: 50px;
+  padding-top: 50px;
+  line-height: 1;
 }
 .slider__text-first {
-  font-size: 200px;
-  line-height: 200px;
+  font-size: 50px;
+  line-height: 1;
 }
 .sale {
-  margin-bottom: 130px;
+  margin-bottom: 30px;
 }
 .sale__title {
   font-size: 40px;
@@ -155,18 +164,18 @@ body {
   margin-bottom: 30px;
 }
 .product {
-  display: flex;
-  flex-wrap: wrap;
   text-align: center;
 }
-.product__list:not(:nth-child(4n)) {
+/* .product__list:not(:nth-child(4n)) {
   margin-right: 20px;
-}
-.product__list:not(:nth-child(-n + 4)) {
+} */
+.product__list:not(:first-child) {
   margin-top: 20px;
 }
 .product__image {
-  max-width: 345px;
+  max-width: 320px;
+  width: 100%;
+  height: auto;
   margin-bottom: 24px;
 }
 .product__rate {
@@ -201,20 +210,20 @@ body {
 }
 .saleTop {
   background-color: #eeeeee;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 200px;
+  margin-bottom: 30px;
 }
 .saleTop__image {
-  max-width: 50vw;
+  max-width: 320px;
   height: auto;
   width: auto;
   max-height: 1000px;
+  margin-bottom: 80px;
 }
 .saleTop__content {
-  max-width: 50vw;
-  padding: 80px 25px 18px 0;
+  margin: 0 auto;
+  max-width: 320px;
+  padding: 80px 0 18px;
+  text-align: center;
 }
 .saleTop__sale {
   text-transform: uppercase;
@@ -241,8 +250,7 @@ body {
   font-weight: 700;
   margin-bottom: 50px;
 }
-.saleTop__price p {
-}
+
 .product__price-new {
   display: inline-block;
 }
@@ -256,8 +264,8 @@ body {
 .saleTop__timer {
   margin-bottom: 50px;
 }
-.saleTop__timer > div:not(:last-child) {
-  margin-right: 25px;
+.saleTop__timer > div:nth-child(2n) {
+  margin-top: 5px;
 }
 .saleTop__timer-day,
 .saleTop__timer-hour,
@@ -268,6 +276,7 @@ body {
   padding: 25px 35px;
   border: 1px solid #ffffff;
   min-width: 140px;
+  min-height: 125px;
 }
 .saleTop__timer-number {
   line-height: 52px;
@@ -294,12 +303,7 @@ body {
   background-color: #000000;
 }
 .featured {
-  margin-bottom: 100px;
-}
-.featured__content {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+  margin-bottom: 30px;
 }
 .featured__title {
   font-size: 40px;
@@ -314,7 +318,7 @@ body {
   background-size: cover;
   text-align: center;
   padding: 100px 0;
-  margin-bottom: 150px;
+  margin-bottom: 30px;
   text-transform: uppercase;
 }
 .fashionshop p {
@@ -344,11 +348,11 @@ body {
 }
 .subscribe {
   background-color: #eeeeee;
-  padding: 100px 0;
+  padding: 30px 0;
   text-align: center;
 }
 .subscribe__title {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 900;
   line-height: 1.5;
   text-transform: uppercase;
@@ -360,7 +364,7 @@ body {
   margin-bottom: 50px;
 }
 .subscribe__email {
-  width: 360px;
+  min-width: 320px;
   border: 1px solid #000000;
   outline: 0;
   padding: 22px;
@@ -383,14 +387,12 @@ body {
   max-width: 1175px;
   margin: 0 auto;
   padding: 50px 0;
+  text-align: center;
 }
 .footer__info {
   margin-bottom: 50px;
 }
 .footer__list {
-  display: inline-block;
-  top: 0;
-  width: 24%;
   vertical-align: top;
 }
 .footer__list-title {
@@ -399,7 +401,6 @@ body {
 }
 .footer__pay {
   margin: 40px 0;
-  display: flex;
   align-items: center;
 }
 .footer__pay-img {
