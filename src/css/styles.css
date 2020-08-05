@@ -34,7 +34,9 @@ body {
 .contact__tel {
   margin-right: 20px;
 }
-
+.contact i {
+  margin-right: 10px;
+}
 .contact__tel,
 .contact__mail {
   display: inline-flex;
@@ -370,6 +372,7 @@ body {
   text-transform: uppercase;
 }
 .footer__pay {
+  display: flex;
   margin: 40px 0;
   align-items: center;
 }

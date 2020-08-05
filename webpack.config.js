@@ -3,7 +3,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const webpackMerge = require("webpack-merge");
 const FriendlyErrorsWebpackPlugin = require("friendly-errors-webpack-plugin");
 const WebpackBar = require("webpackbar");
- 
+
 // console.log("DIRNAME", __dirname); // глобальная переменная, содержащая абсолютный путь к файлу
 const loadModeConfig = (env) =>
   require(`./build-utils/${env.mode}.config`)(env);
@@ -32,10 +32,10 @@ module.exports = (env) =>
             test: /\.(gif|png|jpe?g|svg)$/,
             use: [
               {
-                loader: "url-loader",
+                loader: "file-loader",
                 options: {
                   name: "[path]/[name].[ext]",
-                  limit: 5000,
+                  limit: 50000,
                 },
               },
             ],
@@ -57,5 +57,5 @@ module.exports = (env) =>
         new WebpackBar(),
       ],
     },
-    loadModeConfig(env)
+    loadModeConfig(env),
   );

@@ -192,6 +192,9 @@
   .subscribe__title {
     font-size: 62px;
   }
+  .footer {
+    text-align: left;
+  }
 }
 @media (min-width: 1440px) {
   .product {
@@ -199,10 +202,13 @@
     max-width: 1440px;
     justify-content: space-between;
   }
+  .product__list {
+    margin: auto 0;
+  }
   .product__list:nth-child(-n + 4) {
     margin-top: 0;
   }
   .product__list:not(:nth-child(-n + 4)) {
-    margin-top: 20px;
+    margin-top: 50px;
   }
 }
