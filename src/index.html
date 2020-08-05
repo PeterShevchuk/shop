@@ -10,51 +10,319 @@
     <title>Shop</title>
   </head>
   <body>
-    <div class="contact">
+    <header>
+      <div class="contact">
+        <div class="container">
+          <p class="contact__tel">
+            <i class="icons icon--tel"></i> (0) 101 0000 888
+          </p>
+          <p class="contact__mail">
+            <i class="icons icon--email"></i>info@yourdomain.com
+          </p>
+        </div>
+      </div>
+
       <div class="container">
-        <p class="contact__tel">
-          <i class="icons icon--tel"></i> (0) 101 0000 888
-        </p>
-        <p class="contact__mail">
-          <i class="icons icon--email"></i>info@yourdomain.com
-        </p>
+        <nav class="nav">
+          <div class="logo">Fashion Shop</div>
+          <ul class="nav-menu">
+            <li class="nav-menu__list">
+              <a href="#" class="nav-menu__item">home</a>
+            </li>
+            <li class="nav-menu__list">
+              <a href="#" class="nav-menu__item">shop</a>
+            </li>
+            <li class="nav-menu__list">
+              <a href="#" class="nav-menu__item">blog</a>
+            </li>
+            <li class="nav-menu__list">
+              <a href="#" class="nav-menu__item">about us</a>
+            </li>
+            <li class="nav-menu__list">
+              <a href="#" class="nav-menu__item">contact us</a>
+            </li>
+          </ul>
+          <ul class="nav-btn">
+            <li class="nav-btn__list"><i class="icons icon--user"></i></li>
+            <li class="nav-btn__list"><i class="icons icon--search"></i></li>
+            <li class="nav-btn__list"><i class="icons icon--basker"></i></li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <div class="container">
-      <div class="header">
-        <div class="header__logo">Fashion Shop</div>
-        <ul class="header-menu">
-          <li class="header-menu__list">
-            <a href="#" class="header-menu__item">home</a>
-          </li>
-          <li class="header-menu__list">
-            <a href="#" class="header-menu__item">shop</a>
-          </li>
-          <li class="header-menu__list">
-            <a href="#" class="header-menu__item">blog</a>
-          </li>
-          <li class="header-menu__list">
-            <a href="#" class="header-menu__item">about us</a>
-          </li>
-          <li class="header-menu__list">
-            <a href="#" class="header-menu__item">contact us</a>
-          </li>
-        </ul>
-        <ul class="header-btn">
-          <li class="header-btn__list"><i class="icons icon--user"></i></li>
-          <li class="header-btn__list"><i class="icons icon--search"></i></li>
-          <li class="header-btn__list"><i class="icons icon--basker"></i></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="slider">
+    <div class="container slider">
       <div class="slider__text">
         <p class="slider__text-first">Sale</p>
         <p class="slider__text-second">Up to 50% Off</p>
       </div>
       <img src="./img/slider/bg.png" alt="slider" width="100%" height="100%" />
     </div>
+
+    <div class="container sale">
+      <h2 class="sale__title"><a href="#"> Sale Products </a></h2>
+      <ul class="product">
+        <li class="product__list">
+          <img
+            src="./img/content/sale1.png"
+            alt=""
+            class="product__image"
+            width="387"
+            height="440"
+          />
+          <div class="product__rate"></div>
+          <div class="product__name">Embroidered Linen Shirt</div>
+          <div class="product__price">$30.50</div>
+          <button class="product__add">Add to Cart</button>
+        </li>
+        <li class="product__list">
+          <img
+            src="./img/content/sale2.png"
+            alt=""
+            class="product__image"
+            width="387"
+            height="440"
+          />
+          <div class="product__rate"></div>
+          <div class="product__name">Embroidered Linen Shirt</div>
+          <div class="product__price">$30.50</div>
+          <button class="product__add">Add to Cart</button>
+        </li>
+        <li class="product__list">
+          <img
+            src="./img/content/sale3.png"
+            alt=""
+            class="product__image"
+            width="387"
+            height="440"
+          />
+          <div class="product__rate"></div>
+          <div class="product__name">Embroidered Linen Shirt</div>
+          <div class="product__price">$30.50</div>
+          <button class="product__add">Add to Cart</button>
+        </li>
+        <li class="product__list">
+          <img
+            src="./img/content/sale4.png"
+            alt=""
+            class="product__image"
+            width="387"
+            height="440"
+          />
+          <div class="product__rate"></div>
+          <div class="product__name">Embroidered Linen Shirt</div>
+          <div class="product__price">$30.50</div>
+          <button class="product__add">Add to Cart</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="saleTop">
+      <div class="saleTop__content">
+        <div>
+          <p class="saleTop__sale">Sale</p>
+          <p class="saleTop__title">Deal of the Day <br />30% on Dresses</p>
+          <p class="saleTop__name">Pretty Thing Floral Skater Dress</p>
+          <p class="saleTop__price">$30.50</p>
+          <div class="saleTop__timer">
+            <div class="saleTop__timer-day">
+              <p class="saleTop__timer-number">13</p>
+              <p class="saleTop__timer-char">day</p>
+            </div>
+            <div class="saleTop__timer-hour">
+              <p class="saleTop__timer-number">14</p>
+              <p class="saleTop__timer-char">hours</p>
+            </div>
+            <div class="saleTop__timer-min">
+              <p class="saleTop__timer-number">12</p>
+              <p class="saleTop__timer-char">minutes</p>
+            </div>
+            <div class="saleTop__timer-sec">
+              <p class="saleTop__timer-number">11</p>
+              <p class="saleTop__timer-char">seconds</p>
+            </div>
+          </div>
+          <button class="saleTop__add">Add to Cart</button>
+        </div>
+      </div>
+      <img
+        class="saleTop__image"
+        src="./img/content/saleTop1.png"
+        alt=""
+        width="900"
+        height="1000"
+      />
+    </div>
+    <div class="container featured">
+      <h2 class="featured__title"><a href="#"> Featured Products </a></h2>
+      <ul class="product">
+        <li class="product__list">
+          <img
+            src="./img/content/sale1.png"
+            alt=""
+            class="product__image"
+            width="387"
+            height="440"
+          />
+          <div class="product__rate"></div>
+          <div class="product__name">Embroidered Linen Shirt</div>
+          <div class="product__price">$30.50</div>
+          <button class="product__add">Add to Cart</button>
+        </li>
+        <li class="product__list">
+          <img
+            src="./img/content/sale2.png"
+            alt=""
+            class="product__image"
+            width="387"
+            height="440"
+          />
+          <div class="product__rate"></div>
+          <div class="product__name">Embroidered Linen Shirt</div>
+          <div class="product__price">$30.50</div>
+          <button class="product__add">Add to Cart</button>
+        </li>
+        <li class="product__list">
+          <img
+            src="./img/content/sale3.png"
+            alt=""
+            class="product__image"
+            width="387"
+            height="440"
+          />
+          <div class="product__rate"></div>
+          <div class="product__name">Embroidered Linen Shirt</div>
+          <div class="product__price">$30.50</div>
+          <button class="product__add">Add to Cart</button>
+        </li>
+        <li class="product__list">
+          <img
+            src="./img/content/sale4.png"
+            alt=""
+            class="product__image"
+            width="387"
+            height="440"
+          />
+          <div class="product__rate"></div>
+          <div class="product__name">Embroidered Linen Shirt</div>
+          <div class="product__price">$30.50</div>
+          <button class="product__add">Add to Cart</button>
+        </li>
+        <li class="product__list">
+          <img
+            src="./img/content/sale1.png"
+            alt=""
+            class="product__image"
+            width="387"
+            height="440"
+          />
+          <div class="product__rate"></div>
+          <div class="product__name">Embroidered Linen Shirt</div>
+          <div class="product__price">$30.50</div>
+          <button class="product__add">Add to Cart</button>
+        </li>
+        <li class="product__list">
+          <img
+            src="./img/content/sale2.png"
+            alt=""
+            class="product__image"
+            width="387"
+            height="440"
+          />
+          <div class="product__rate"></div>
+          <div class="product__name">Embroidered Linen Shirt</div>
+          <div class="product__price">$30.50</div>
+          <button class="product__add">Add to Cart</button>
+        </li>
+        <li class="product__list">
+          <img
+            src="./img/content/sale3.png"
+            alt=""
+            class="product__image"
+            width="387"
+            height="440"
+          />
+          <div class="product__rate"></div>
+          <div class="product__name">Embroidered Linen Shirt</div>
+          <div class="product__price">$30.50</div>
+          <button class="product__add">Add to Cart</button>
+        </li>
+        <li class="product__list">
+          <img
+            src="./img/content/sale4.png"
+            alt=""
+            class="product__image"
+            width="387"
+            height="440"
+          />
+          <div class="product__rate"></div>
+          <div class="product__name">Embroidered Linen Shirt</div>
+          <div class="product__price">$30.50</div>
+          <button class="product__add">Add to Cart</button>
+        </li>
+      </ul>
+    </div>
+    <div class="container fashionshop">
+      <p class="fashionshop__title">This is Fashionshop</p>
+      <p class="fashionshop__text">Your fashion and style destination</p>
+      <a href="#" class="fashionshop__button">shop For Women</a>
+    </div>
+    <div class="subscribe">
+      <div class="container">
+        <p class="subscribe__title">Subscribe to newsletter</p>
+        <p class="subscribe__text">
+          Get updated on new product releases and promotions.
+        </p>
+        <form class="subscribe__form" action="#" method="get">
+          <input
+            class="subscribe__email"
+            type="email"
+            name="email"
+            placeholder="Your Email..."
+            required
+          />
+          <button class="subscribe__submit" type="submit" value="send">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <ul class="footer__info">
+        <li class="footer__list">
+          <div class="logo">Fashion Shop</div>
+          <div class="footer__pay">
+            <img
+              class="footer__pay-img"
+              src="./img/footer/Mastercard.png"
+              alt=""
+            />
+            <img class="footer__pay-img" src="./img/footer/Paypal.png" alt="" />
+            <img class="footer__pay-img" src="./img/footer/Visa.png" alt="" />
+          </div>
+        </li>
+        <li class="footer__list">
+          <h3 class="footer__list-title">Customer Service</h3>
+          <a href="#" class="footer__link">About Us</a>
+          <a href="#" class="footer__link">F.A.Q.</a>
+          <a href="#" class="footer__link">My Account</a>
+          <a href="#" class="footer__link">Contact</a>
+        </li>
+        <li class="footer__list">
+          <h3 class="footer__list-title">Social</h3>
+          <a href="#" class="footer__link">Instagram</a>
+          <a href="#" class="footer__link">Twitter</a>
+          <a href="#" class="footer__link">Facebook</a>
+          <a href="#" class="footer__link">Pinterest</a>
+        </li>
+        <li class="footer__list">
+          <h3 class="footer__list-title">Contact Us</h3>
+          <a href="#" class="footer__link">Patricia C. Amedee 4401</a>
+          <a href="#" class="footer__link">+99 (0) 101 0000 888</a>
+          <a href="#" class="footer__link">info@yourdomain.com</a>
+        </li>
+      </ul>
+      <div class="footer__copyright">© 2018 ARTBEES All rights reserved.</div>
+    </footer>
   </body>
 </html>

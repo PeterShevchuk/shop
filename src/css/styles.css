@@ -6,6 +6,12 @@
 li {
   list-style: none;
 }
+a {
+  color: #000000;
+}
+img {
+  display: block;
+}
 body {
   font-family: Poppins;
   font-size: 14px;
@@ -13,13 +19,13 @@ body {
   background-color: #ffffff;
 }
 .container {
-  max-width: 1680px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
 .contact {
   border-bottom: 1px solid #cccccc;
-  padding: 25px 0;
+  padding: 15px 0;
 }
 .contact__tel {
   margin-right: 20px;
@@ -29,8 +35,13 @@ body {
 .contact__mail {
   display: inline;
 }
+.logo {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
 
-.header {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,22 +50,25 @@ body {
   font-size: 18px;
 }
 
-.header-menu,
-.header-btn {
+.nav-menu,
+.nav-btn {
   display: flex;
   justify-content: space-between;
 }
-.header-menu__list:not(:last-child) {
+.nav-menu__list:not(:last-child) {
   margin-right: 40px;
 }
-.header-menu {
+.nav-menu {
   margin: 40px 0;
 }
-.header-menu__item {
+.nav-menu__item {
   text-decoration: none;
-  color: #000000;
+  transition: all 0.1s linear;
 }
-.header-btn__list {
+.nav-menu__item:hover {
+  color: #eaac00;
+}
+.nav-btn__list {
   cursor: pointer;
 }
 
@@ -83,6 +97,7 @@ body {
 }
 .slider {
   position: relative;
+  margin-bottom: 90px;
 }
 .slider img {
   max-width: 100%;
@@ -110,4 +125,262 @@ body {
 .slider__text-first {
   font-size: 200px;
   line-height: 200px;
+}
+.sale {
+  margin-bottom: 130px;
+}
+.sale__title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.product__list:not(:nth-child(4n)) {
+  margin-right: 20px;
+}
+.product__list:not(:nth-child(-n + 4)) {
+  margin-top: 20px;
+}
+.product__image {
+  max-width: 345px;
+  margin-bottom: 24px;
+}
+.product__rate {
+  width: 80px;
+  height: 16px;
+  background-image: url("../img/icons/star.png");
+  margin: 0 auto 24px;
+}
+.product__name {
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.product__price {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.product__add {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 15px 20px;
+  display: inline-block;
+  letter-spacing: 5px;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+.product__add:hover {
+  background-color: #eaac00;
+}
+.saleTop {
+  background-color: #eeeeee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.saleTop__image {
+  max-width: 50vw;
+  height: auto;
+  width: auto;
+  max-height: 1000px;
+}
+.saleTop__content {
+  max-width: 50vw;
+  padding: 80px 25px 18px 0;
+}
+.saleTop__sale {
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #c8c290;
+  padding: 30px 35px;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 10px;
+  margin-bottom: 40px;
+}
+.saleTop__title {
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+.saleTop__name {
+  font-size: 24px;
+  font-weight: 500;
+}
+.saleTop__price {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.saleTop__timer {
+  margin-bottom: 50px;
+}
+.saleTop__timer > div:not(:last-child) {
+  margin-right: 25px;
+}
+.saleTop__timer-day,
+.saleTop__timer-hour,
+.saleTop__timer-min,
+.saleTop__timer-sec {
+  display: inline-block;
+  text-align: center;
+  padding: 20px 35px;
+  border: 1px solid #ffffff;
+}
+.saleTop__timer-number {
+  line-height: 52px;
+  font-size: 52px;
+  font-weight: 600;
+}
+.saleTop__timer-char {
+  font-size: 14px;
+}
+.saleTop__add {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #eaac00;
+  padding: 15px 30px;
+  display: inline-block;
+  letter-spacing: 5px;
+  border: 0;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+.saleTop__add:hover {
+  background-color: #000000;
+}
+.featured {
+  margin-bottom: 100px;
+}
+.featured__content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.featured__title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  line-height: 60px;
+}
+.fashionshop {
+  background-image: url("../img/content/fashionshopBG.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+  margin-bottom: 150px;
+  text-transform: uppercase;
+}
+.fashionshop p {
+  margin-bottom: 50px;
+}
+.fashionshop__title {
+  font-size: 48px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+.fashionshop__text {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  line-height: 1.2;
+}
+.fashionshop__button {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  background-color: yellow;
+  padding: 10px 15px;
+  text-decoration: unset;
+}
+.fashionshop__button:hover {
+  transform: scale(1.1);
+}
+.subscribe {
+  background-color: #eeeeee;
+  padding: 100px 0;
+  text-align: center;
+}
+.subscribe__title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.subscribe__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+.subscribe__email {
+  width: 360px;
+  border: 1px solid #000000;
+  outline: 0;
+  padding: 22px;
+}
+.subscribe__submit {
+  border: 1px solid #eaac00;
+  outline: 0;
+  background-color: #eaac00;
+  cursor: pointer;
+  padding: 20px 45px;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.subscribe__submit:hover {
+  opacity: 0.8;
+}
+.footer {
+  max-width: 1175px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.footer__info {
+  margin-bottom: 50px;
+}
+.footer__list {
+  display: inline-block;
+  top: 0;
+  width: 24%;
+  vertical-align: top;
+}
+.footer__list-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.footer__pay {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+}
+.footer__pay-img {
+  display: inline-block;
+}
+.footer__pay-img:not(:last-child) {
+  margin-right: 10px;
+}
+.footer__link {
+  display: block;
+  text-decoration: unset;
+  margin: 5px 0;
+  color: #888888;
+}
+.footer__copyright {
+  color: #888888;
 }
